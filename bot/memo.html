@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BOT Development Memo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+      body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; margin: 24px; line-height: 1.6; }
+      h1 { margin-top: 0; }
+      code, pre { background: #0f172a; color: #e2e8f0; padding: 6px 8px; border-radius: 8px; }
+      pre { overflow: auto; }
+      a { color: #0ea5e9; text-decoration: none; }
+    </style>
+  </head>
+  <body>
+    <h1>BOT Development Memo</h1>
+    <p>Ключевые принципы и критичные элементы бота:</p>
+    <ul>
+      <li>Сохранить «двигатель»: флаги, машина состояний, миксины, торговые функции.</li>
+      <li>Единый формат цен и Decimal‑математика для денег.</li>
+      <li>Google Sheets как «компас», но истина — текущее состояние бота.</li>
+      <li>FTMO‑подобный скоринг кандидатов перед входом.</li>
+      <li>Уведомления Telegram только по критическим событиям.</li>
+    </ul>
+    <h2>Архитектура</h2>
+    <pre><code>
+clean_trading_bot/
+  config.py
+  utils.py
+  sheets_manager.py
+  trading_bot.py
+    </code></pre>
+    <p>Подробности доступны только владельцу проекта. Публичный доступ ограничен.</p>
+    <p><a href="/">← На главную</a></p>
+  </body>
+  </html>
+
+
