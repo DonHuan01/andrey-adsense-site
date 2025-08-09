@@ -1,0 +1,11 @@
+[build]
+  publish = "website"
+  command = ""
+
+# Если сайт будет как SPA, раскомментируйте редирект ниже
+# [[redirects]]
+#   from = "/*"
+#   to = "/index.html"
+#   status = 200
+
+

@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Accumulation Bot</title>
+    <meta name="description" content="Crypto trading bot status and docs" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+      :root { color-scheme: light dark; }
+      body { font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; margin: 0; }
+      header { padding: 36px 24px; text-align: center; background: linear-gradient(135deg,#0ea5e9,#1e293b); color: #fff; }
+      header h1 { margin: 0; font-weight: 700; letter-spacing: 0.4px; }
+      main { max-width: 960px; margin: 0 auto; padding: 32px 16px; }
+      .grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(260px,1fr)); gap: 16px; }
+      .card { border: 1px solid rgba(0,0,0,.08); border-radius: 12px; padding: 18px; background: rgba(255,255,255,.6); backdrop-filter: blur(4px); }
+      .card h3 { margin-top: 0; }
+      footer { text-align: center; padding: 28px; color: #64748b; }
+      a.btn { display: inline-block; padding: 10px 14px; border-radius: 10px; border: 1px solid #0ea5e9; color: #0ea5e9; text-decoration: none; font-weight: 600; }
+      a.btn:hover { background: #0ea5e9; color: #fff; }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Accumulation Bot</h1>
+      <p>Документация, статус и быстрые ссылки</p>
+    </header>
+    <main>
+      <section class="grid">
+        <article class="card">
+          <h3>О проекте</h3>
+          <p>Автоматизированный крипто‑бот с FTMO‑подобным скорингом, управлением через Telegram и интеграцией Google Sheets.</p>
+          <a class="btn" href="https://github.com/DonHuan01/accumulation-bot" target="_blank" rel="noopener">GitHub</a>
+        </article>
+        <article class="card">
+          <h3>Релизы</h3>
+          <p>Смотрите список версий и изменения.</p>
+          <a class="btn" href="https://github.com/DonHuan01/accumulation-bot/releases" target="_blank" rel="noopener">Releases</a>
+        </article>
+        <article class="card">
+          <h3>Документация</h3>
+          <p>Краткая памятка по архитектуре и важным решениям.</p>
+          <a class="btn" href="/memo.html">Memo</a>
+        </article>
+      </section>
+    </main>
+    <footer>
+      © <span id="y"></span> Accumulation Bot. All rights reserved.
+    </footer>
+    <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+  </body>
+  </html>
+
+
