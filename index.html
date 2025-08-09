@@ -1,46 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
   <title>Signal Layer Blog</title>
   <style>
     body {
-      font-family: sans-serif;
-      max-width: 800px;
-      margin: auto;
-      padding: 2rem;
-      background-color: #f9f9f9;
+      background: #f6f6f6;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: flex-start;
+      min-height: 100vh;
+      padding: 40px 0 0 0;
+      box-sizing: border-box;
+    }
+    .side {
+      width: 20vw;
+      min-width: 220px;
+      height: 80vh;
+      border: 3px solid #d00;
+      border-radius: 8px;
+      margin: 0 20px;
+      background: #fff;
+      color: #d00;
+      font-size: 2rem;
+      display: flex;
+      align-items: flex-start;
+      justify-content: center;
+      text-align: center;
+      padding-top: 80px;
+    }
+    .main {
+      flex: 1 1 0;
+      min-width: 400px;
+      margin: 0 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .main-content {
+      width: 90%;
+      height: 40vh;
+      border: 3px solid #d00;
+      border-radius: 8px;
+      margin-top: 30px;
+      color: #d00;
+      font-size: 1.4rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
     }
     h1 {
       text-align: center;
+      font-size: 2.6rem;
+      margin-bottom: 0.5em;
+      margin-top: 0;
     }
-    ul {
-      list-style: none;
-      padding: 0;
+    .links {
+      margin-bottom: 0.7em;
+      text-align: left;
     }
-    li {
-      margin: 1rem 0;
-    }
-    a {
-      text-decoration: none;
-      color: #0077cc;
-    }
-    a:hover {
+    .links a {
+      display: block;
+      color: #2266cc;
+      margin-bottom: 0.2em;
       text-decoration: underline;
     }
   </style>
 </head>
 <body>
-  <h1>Signal Layer Blog</h1>
-  <p>Documenting behavioral market patterns without prediction.</p>
-
-  <ul>
-    <li><a href="Welcome%20to%20Signal%20Layer.html">Welcome to Signal Layer</a></li>
-    <li><a href="agtusdt-patterns.html">AGTUSDT Patterns</a></li>
-    <li><a href="stousdt-repetitions.html">STOUSDT Repetitions</a></li>
-    <li><a href="velvetusdt-anomalies.html">VELVETUSDT Anomalies</a></li>
-    <!-- Добавляй новые посты здесь -->
-  </ul>
+  <div class="container">
+    <div class="side">здесь должен быть текст</div>
+    <div class="main">
+      <h1>Signal Layer Blog</h1>
+      <div>Documenting behavioral market patterns without prediction.</div>
+      <div class="links">
+        <a href="#">Welcome to Signal Layer</a>
+        <a href="#">AGTUSDT Patterns</a>
+        <a href="#">STOUSDT Repetitions</a>
+        <a href="#">VELVETUSDT Anomalies</a>
+      </div>
+      <div class="main-content">здесь должен быть текст</div>
+    </div>
+    <div class="side">здесь должен быть текст</div>
+  </div>
 </body>
 </html>
