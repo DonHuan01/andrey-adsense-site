@@ -3,92 +3,129 @@
 <head>
   <meta charset="UTF-8">
   <title>Signal Layer Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
-      background: #f6f6f6;
-      font-family: Arial, sans-serif;
       margin: 0;
       padding: 0;
+      font-family: Arial, sans-serif;
+      background: #f6f6f6;
     }
     .container {
       display: flex;
       flex-direction: row;
-      justify-content: space-between;
-      align-items: flex-start;
       min-height: 100vh;
-      padding: 40px 0 0 0;
       box-sizing: border-box;
+      gap: 20px;
+      padding: 30px 0;
     }
     .side {
-      width: 20vw;
-      min-width: 220px;
-      height: 80vh;
-      border: 3px solid #d00;
-      border-radius: 8px;
-      margin: 0 20px;
+      flex: 0 0 18vw;
+      min-width: 180px;
       background: #fff;
-      color: #d00;
-      font-size: 2rem;
+      border: 2px solid #d00;
+      border-radius: 8px;
+      margin: 0 10px;
       display: flex;
       align-items: flex-start;
       justify-content: center;
-      text-align: center;
-      padding-top: 80px;
+      padding: 40px 10px;
+      box-sizing: border-box;
+      color: #d00;
+      font-size: 1.3rem;
+      min-height: 400px;
+      word-break: break-word;
     }
     .main {
       flex: 1 1 0;
-      min-width: 400px;
-      margin: 0 20px;
+      min-width: 320px;
       display: flex;
       flex-direction: column;
       align-items: center;
+      margin: 0 10px;
     }
     .main-content {
-      width: 90%;
-      height: 40vh;
-      border: 3px solid #d00;
+      width: 100%;
+      min-height: 220px;
+      border: 2px solid #d00;
       border-radius: 8px;
-      margin-top: 30px;
+      margin-top: 25px;
       color: #d00;
-      font-size: 1.4rem;
+      font-size: 1.1rem;
       display: flex;
       align-items: center;
       justify-content: center;
       text-align: center;
+      background: #fff;
+      box-sizing: border-box;
+      padding: 30px 10px;
     }
     h1 {
       text-align: center;
-      font-size: 2.6rem;
-      margin-bottom: 0.5em;
-      margin-top: 0;
+      font-size: 2rem;
+      margin: 0 0 10px 0;
     }
     .links {
-      margin-bottom: 0.7em;
+      margin-bottom: 1.5em;
+      margin-top: 0.8em;
+      width: 100%;
       text-align: left;
     }
     .links a {
-      display: block;
+      display: inline-block;
       color: #2266cc;
-      margin-bottom: 0.2em;
+      font-weight: bold;
+      margin-bottom: 0.4em;
       text-decoration: underline;
+      font-size: 1.15rem;
+      transition: color 0.2s;
+    }
+    .links a:hover {
+      color: #d00;
+    }
+    @media (max-width: 900px) {
+      .container {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+      }
+      .side {
+        min-width: 0;
+        width: 100%;
+        margin: 10px 0;
+        justify-content: flex-start;
+        font-size: 1.05rem;
+        padding: 20px 8px;
+        min-height: 100px;
+      }
+      .main {
+        min-width: 0;
+        margin: 0;
+      }
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <div class="side">здесь должен быть текст</div>
+    <div class="side" id="left-block">
+      Здесь может быть любой ваш текст, например, меню, цитаты, новости и т.п.
+    </div>
     <div class="main">
       <h1>Signal Layer Blog</h1>
       <div>Documenting behavioral market patterns without prediction.</div>
       <div class="links">
-        <a href="#">Welcome to Signal Layer</a>
-        <a href="#">AGTUSDT Patterns</a>
-        <a href="#">STOUSDT Repetitions</a>
-        <a href="#">VELVETUSDT Anomalies</a>
+        <a href="welcome.html">Welcome to Signal Layer</a><br>
+        <a href="agtusdt-patterns.html">AGTUSDT Patterns</a><br>
+        <a href="stousdt-patterns.html">STOUSDT Repetitions</a><br>
+        <a href="velvetusdt-patterns.html">VELVETUSDT Anomalies</a>
       </div>
-      <div class="main-content">здесь должен быть текст</div>
+      <div class="main-content" id="main-content">
+        Здесь будет появляться основной текст или информация (например, описание выбранного паттерна).
+      </div>
     </div>
-    <div class="side">здесь должен быть текст</div>
+    <div class="side" id="right-block">
+      Здесь тоже может быть текст, реклама, контакты или что угодно.
+    </div>
   </div>
 </body>
 </html>
